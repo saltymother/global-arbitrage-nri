@@ -1,0 +1,1276 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Global Arbitrage & NRI Wealth Navigator | The 4-Day iPhone & Global Mobility Blueprint</title>
+  <meta name="description" content="An authoritative financial engineering guide to tech careers abroad vs India, Purchasing Power Parity (PPP), the 4-Day iPhone reality, Section 44ADA remote arbitrage, and compliant cross-border banking.">
+
+  <!-- Tailwind CSS CDN with configuration -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              deep: '#070A13',
+              slate: '#0E1626',
+              elevated: '#152238',
+              cyan: '#22D3EE',
+              emerald: '#10B981',
+              indigo: '#6366F1'
+            }
+          },
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'Inter', 'sans-serif'],
+            mono: ['"JetBrains Mono"', 'monospace']
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- Chart.js -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+  <!-- Custom Stylesheet (Relative Path for GitHub Pages compliance) -->
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body class="bg-[#070A13] text-slate-100 antialiased selection:bg-cyan-500/30 selection:text-cyan-200">
+
+  <!-- Top Real-Time Macro Ticker Bar -->
+  <div class="bg-slate-950/90 border-b border-slate-800/80 px-4 py-1.5 text-xs text-slate-400 font-mono-num z-50 sticky top-0 backdrop-blur-md">
+    <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-3">
+      <div class="flex items-center gap-2">
+        <span class="flex h-2 w-2 relative">
+          <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+          <span class="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
+        </span>
+        <span class="font-semibold text-slate-300">MACRO BENCHMARKS:</span>
+      </div>
+      <div class="flex flex-wrap items-center gap-4 text-[11px] sm:text-xs">
+        <span class="flex items-center gap-1.5 text-slate-300">
+          <span class="text-slate-500">USD/INR:</span> <strong class="text-emerald-400">₹86.42</strong>
+          <span class="text-[10px] text-cyan-400">(Managed Float)</span>
+        </span>
+        <span class="hidden sm:inline text-slate-700">|</span>
+        <span class="flex items-center gap-1.5 text-slate-300">
+          <span class="text-slate-500">EUR/INR:</span> <strong class="text-emerald-400">₹93.55</strong>
+        </span>
+        <span class="hidden sm:inline text-slate-700">|</span>
+        <span class="flex items-center gap-1.5 text-slate-300">
+          <span class="text-slate-500">RBI Forex Reserves:</span> <strong class="text-cyan-300">$704.8 Billion</strong>
+        </span>
+        <span class="hidden md:inline text-slate-700">|</span>
+        <span class="hidden md:flex items-center gap-1.5 text-slate-300">
+          <span class="text-slate-500">India PPP Multiplier:</span> <strong class="text-amber-400">~3.8x Local Goods</strong>
+        </span>
+      </div>
+      <div class="hidden lg:flex items-center gap-2 text-cyan-400">
+        <i data-lucide="shield-check" class="w-3.5 h-3.5"></i>
+        <span>FEMA & Section 44ADA Compliant</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Primary Sticky Navigation -->
+  <header id="main-header" class="sticky top-7 z-40 w-full transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16 sm:h-20">
+        
+        <!-- Brand Identity -->
+        <a href="#hero" class="flex items-center gap-3 group">
+          <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-cyan-500 to-emerald-500 flex items-center justify-center p-0.5 shadow-lg shadow-cyan-500/20 group-hover:scale-105 transition-transform">
+            <div class="w-full h-full bg-slate-950 rounded-[10px] flex items-center justify-center">
+              <i data-lucide="globe-2" class="w-5 h-5 text-cyan-400"></i>
+            </div>
+          </div>
+          <div>
+            <div class="font-bold text-sm sm:text-base tracking-tight text-white flex items-center gap-2">
+              <span>GLOBAL ARBITRAGE</span>
+              <span class="text-[10px] px-1.5 py-0.5 rounded font-mono font-normal bg-cyan-500/10 text-cyan-400 border border-cyan-500/30">NRI NAVIGATOR</span>
+            </div>
+            <div class="text-[11px] text-slate-400 font-medium">The 4-Day iPhone & Mobility Blueprint</div>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation Menu -->
+        <nav class="hidden xl:flex items-center gap-6 text-xs font-semibold text-slate-300">
+          <a href="#careers-visas" class="nav-link hover:text-white py-1">USA vs EU Careers</a>
+          <a href="#remote-arbitrage" class="nav-link hover:text-white py-1">Remote Arbitrage</a>
+          <a href="#ppp-iphone" class="nav-link hover:text-white py-1">The 4-Day iPhone & PPP</a>
+          <a href="#rupee-macro" class="nav-link hover:text-white py-1">Rupee & The ₹100 Debate</a>
+          <a href="#legal-banking" class="nav-link hover:text-white py-1">NRE/NRO & AML</a>
+          <a href="#calculators" class="nav-link hover:text-white py-1">Calculators</a>
+        </nav>
+
+        <!-- CTA & Mobile Toggle -->
+        <div class="flex items-center gap-3">
+          <a href="#calculators" class="hidden sm:inline-flex items-center gap-2 px-4 py-2 text-xs font-bold rounded-lg bg-gradient-to-r from-cyan-500 to-emerald-500 text-slate-950 hover:brightness-110 shadow-md shadow-cyan-500/20 transition-all">
+            <i data-lucide="calculator" class="w-4 h-4"></i>
+            <span>Interactive Tools</span>
+          </a>
+          <button id="mobile-menu-btn" class="xl:hidden p-2 rounded-lg bg-slate-800/80 text-slate-300 hover:text-white hover:bg-slate-700 transition-colors" aria-label="Toggle navigation menu">
+            <i data-lucide="menu" class="w-6 h-6"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile Dropdown Menu -->
+    <div id="mobile-menu" class="hidden xl:hidden bg-slate-950/95 border-b border-slate-800 px-6 py-4 space-y-3 backdrop-blur-xl">
+      <a href="#careers-visas" class="block text-sm font-semibold text-slate-200 hover:text-cyan-400">1. USA vs EU Careers & Visas</a>
+      <a href="#remote-arbitrage" class="block text-sm font-semibold text-slate-200 hover:text-cyan-400">2. The Remote Arbitrage Blueprint</a>
+      <a href="#ppp-iphone" class="block text-sm font-semibold text-slate-200 hover:text-cyan-400">3. The 4-Day iPhone & PPP Explained</a>
+      <a href="#rupee-macro" class="block text-sm font-semibold text-slate-200 hover:text-cyan-400">4. Rupee Deprecation & The ₹100 Debate</a>
+      <a href="#legal-banking" class="block text-sm font-semibold text-slate-200 hover:text-cyan-400">5. Cross-Border Banking (NRE/NRO vs Benami)</a>
+      <a href="#calculators" class="block text-sm font-semibold text-cyan-400 hover:text-cyan-300 font-bold">6. Interactive Calculators Suite</a>
+    </div>
+  </header>
+
+  <!-- ======================================================================
+       SECTION 1: HERO BANNER & EXECUTIVE SUMMARY
+       ====================================================================== -->
+  <section id="hero" class="relative pt-12 pb-20 sm:pt-20 sm:pb-28 overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      
+      <!-- Editorial Pill Tag -->
+      <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-slate-800/80 border border-slate-700/80 text-xs text-slate-300 mb-6 backdrop-blur-sm">
+        <span class="pulse-dot"></span>
+        <span class="font-semibold text-cyan-300">MACROECONOMIC PLAYBOOK 2026–2035</span>
+        <span class="text-slate-500">•</span>
+        <span class="text-slate-400">FEMA, Tax Arbitrage & Wealth Engineering</span>
+      </div>
+
+      <!-- Main Headline & Subheading -->
+      <div class="max-w-4xl">
+        <h1 class="text-3xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-white leading-[1.15]">
+          Global Mobility, <span class="gradient-text-cyan-emerald">Wage Arbitrage</span>, and the Reality of Building Wealth.
+        </h1>
+        <p class="mt-6 text-base sm:text-xl text-slate-300 leading-relaxed font-normal">
+          A comprehensive guide to understanding tech salaries, foreign exchange realities, purchasing power parity, and compliant cross-border wealth creation.
+        </p>
+      </div>
+
+      <!-- Hero Call-To-Action Row -->
+      <div class="mt-8 flex flex-wrap items-center gap-4">
+        <a href="#calculators" class="px-6 py-3.5 rounded-xl font-bold text-sm bg-gradient-to-r from-cyan-500 to-emerald-500 text-slate-950 hover:brightness-110 shadow-lg shadow-cyan-500/25 flex items-center gap-2 transition-all">
+          <i data-lucide="play-circle" class="w-4 h-4"></i>
+          <span>Launch Calculators & Simulators</span>
+        </a>
+        <a href="#careers-visas" class="px-6 py-3.5 rounded-xl font-bold text-sm bg-slate-900 border border-slate-700 hover:border-cyan-500/50 text-slate-200 hover:text-white transition-all flex items-center gap-2">
+          <i data-lucide="table" class="w-4 h-4"></i>
+          <span>Explore USA vs. EU Matrix</span>
+        </a>
+        <button data-modal="pppFormula" class="px-4 py-3.5 rounded-xl text-xs font-semibold text-cyan-400 hover:text-cyan-300 bg-cyan-950/30 border border-cyan-800/40 hover:border-cyan-700 transition-all flex items-center gap-2">
+          <i data-lucide="function-square" class="w-4 h-4"></i>
+          <span>View PPP Math Formula</span>
+        </button>
+      </div>
+
+      <!-- Executive Summary: 4 Key Metric KPI Cards -->
+      <div class="mt-14 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
+        
+        <!-- KPI Card 1: EU Blue Card -->
+        <div class="glass-card p-5 relative overflow-hidden group">
+          <div class="flex items-center justify-between text-slate-400 mb-3">
+            <span class="text-xs uppercase font-mono tracking-wider font-semibold text-cyan-400">Immigration Security</span>
+            <i data-lucide="shield" class="w-4 h-4 text-cyan-400"></i>
+          </div>
+          <div class="text-2xl font-extrabold text-white font-mono-num">EU Blue Card</div>
+          <div class="text-xs text-emerald-400 font-semibold mt-1">Guaranteed path with contract; 0% lottery</div>
+          <p class="mt-2.5 text-xs text-slate-400 leading-relaxed">
+            Unlike the H-1B lottery (20–25% selection rate), the German Blue Card grants permanent residency in 21–27 months and sovereign citizenship in 3–5 years without country-of-birth quotas.
+          </p>
+        </div>
+
+        <!-- KPI Card 2: The PPP Multiple -->
+        <div class="glass-card p-5 relative overflow-hidden group">
+          <div class="flex items-center justify-between text-slate-400 mb-3">
+            <span class="text-xs uppercase font-mono tracking-wider font-semibold text-emerald-400">Arbitrage Multiplier</span>
+            <i data-lucide="scale" class="w-4 h-4 text-emerald-400"></i>
+          </div>
+          <div class="text-2xl font-extrabold text-white font-mono-num">1 USD ≈ ₹20 PPP</div>
+          <div class="text-xs text-cyan-400 font-semibold mt-1">Market conversion @ ~₹86/$ = 3.8x edge</div>
+          <p class="mt-2.5 text-xs text-slate-400 leading-relaxed">
+            In local services (housing, food, healthcare, domestic help), 1 USD gives ₹20–₹23 worth of purchasing power in India, while converting at ₹86, yielding a massive domestic savings rate.
+          </p>
+        </div>
+
+        <!-- KPI Card 3: Target Timeline -->
+        <div class="glass-card p-5 relative overflow-hidden group">
+          <div class="flex items-center justify-between text-slate-400 mb-3">
+            <span class="text-xs uppercase font-mono tracking-wider font-semibold text-amber-400">Productivity Convergence</span>
+            <i data-lucide="cpu" class="w-4 h-4 text-amber-400"></i>
+          </div>
+          <div class="text-2xl font-extrabold text-white font-mono-num">Target: 2035</div>
+          <div class="text-xs text-amber-300 font-semibold mt-1">Sub-7-day electronics parity in India</div>
+          <p class="mt-2.5 text-xs text-slate-400 leading-relaxed">
+            As domestic semiconductor fabs (Dholera, Tata, CG Semi) come online and tech salaries rise, the days of work required for an iPhone will compress from ~28 days (2026) to 4–6 days by 2035.
+          </p>
+        </div>
+
+        <!-- KPI Card 4: Section 44ADA -->
+        <div class="glass-card p-5 relative overflow-hidden group">
+          <div class="flex items-center justify-between text-slate-400 mb-3">
+            <span class="text-xs uppercase font-mono tracking-wider font-semibold text-indigo-400">Tax Optimization</span>
+            <i data-lucide="receipt" class="w-4 h-4 text-indigo-400"></i>
+          </div>
+          <div class="text-2xl font-extrabold text-white font-mono-num">Section 44ADA</div>
+          <div class="text-xs text-emerald-400 font-semibold mt-1">50% deemed profit up to ₹75 Lakhs</div>
+          <p class="mt-2.5 text-xs text-slate-400 leading-relaxed">
+            Global remote contractors billing US/EU firms pay an effective income tax rate of just ~9% to 12% on ₹70 Lakhs foreign revenue, saving ₹11 Lakhs/year compared to salaried Indian peers.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ======================================================================
+       SECTION 2: CAREER MOBILITY — USA VS. EU REALITY CHECK
+       ====================================================================== -->
+  <section id="careers-visas" class="py-20 border-t border-slate-800/80 bg-slate-950/40 relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Section Header -->
+      <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-10">
+        <div>
+          <div class="inline-flex items-center gap-2 text-xs font-bold text-cyan-400 uppercase tracking-widest font-mono mb-2">
+            <span>01 / GLOBAL TALENT DYNAMICS</span>
+          </div>
+          <h2 class="text-2xl sm:text-4xl font-extrabold text-white tracking-tight">
+            Career Mobility: USA vs. EU Reality Check
+          </h2>
+          <p class="mt-2 text-sm sm:text-base text-slate-400 max-w-2xl">
+            Compare high-cash US volatility against guaranteed EU work-life balance and the soaring India Remote Contractor paradigm.
+          </p>
+        </div>
+
+        <!-- Filter Pill Tabs -->
+        <div class="flex items-center gap-1.5 p-1 bg-slate-900 border border-slate-800 rounded-xl overflow-x-auto">
+          <button class="career-filter-btn px-3 py-1.5 rounded-lg text-xs font-semibold text-cyan-400 border border-cyan-500 bg-cyan-500/10 active transition-all whitespace-nowrap" data-filter="all">All Ecosystems</button>
+          <button class="career-filter-btn px-3 py-1.5 rounded-lg text-xs font-semibold text-slate-400 hover:text-slate-200 transition-all whitespace-nowrap" data-filter="usa">USA 🇺🇸</button>
+          <button class="career-filter-btn px-3 py-1.5 rounded-lg text-xs font-semibold text-slate-400 hover:text-slate-200 transition-all whitespace-nowrap" data-filter="germany">Germany 🇩🇪</button>
+          <button class="career-filter-btn px-3 py-1.5 rounded-lg text-xs font-semibold text-slate-400 hover:text-slate-200 transition-all whitespace-nowrap" data-filter="remote_india">Remote 🇮🇳 🌐</button>
+        </div>
+      </div>
+
+      <!-- Interactive Comparison Table -->
+      <div class="custom-table-container glass-card overflow-hidden">
+        <table class="custom-table">
+          <thead>
+            <tr>
+              <th scope="col">Destination & Visa</th>
+              <th scope="col">Gross Comp & Tax Regime</th>
+              <th scope="col">Net Monthly & Rent Cost</th>
+              <th scope="col">Lottery Risk vs. PR Timeline</th>
+              <th scope="col">Monthly Surplus (USD / INR)</th>
+            </tr>
+          </thead>
+          <tbody id="career-table-body">
+            <!-- Dynamically populated by js/app.js from NAVIGATOR_DATA -->
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Deep Dive Editorial Cards -->
+      <div class="mt-10 grid grid-cols-1 md:grid-cols-3 gap-6">
+        
+        <!-- The American Dilemma -->
+        <div class="glass-card p-6 border-l-4 border-l-amber-500">
+          <div class="flex items-center gap-2 text-amber-400 font-bold text-sm mb-2">
+            <i data-lucide="alert-triangle" class="w-4 h-4"></i>
+            <span>The American Dilemma: Golden Handcuffs</span>
+          </div>
+          <p class="text-xs text-slate-300 leading-relaxed">
+            US compensation ($140k–$220k total comp) delivers unparalleled absolute dollar savings. However, India-born engineers face a crippling 30–50+ year Green Card backlog in EB-2/EB-3. An at-will layoff triggers a stressful 60-day grace period to find an H-1B transfer sponsor or depart the country.
+          </p>
+          <div class="mt-4 pt-3 border-t border-slate-800 text-[11px] text-slate-400">
+            <strong>Verdict:</strong> Superb for a 5-year capital accumulation sprint; precarious for generational residency without EB-1 or NIW.
+          </div>
+        </div>
+
+        <!-- The European Social Contract -->
+        <div class="glass-card p-6 border-l-4 border-l-cyan-500">
+          <div class="flex items-center gap-2 text-cyan-400 font-bold text-sm mb-2">
+            <i data-lucide="check-circle-2" class="w-4 h-4"></i>
+            <span>The European Blueprint: Sovereign Freedom</span>
+          </div>
+          <p class="text-xs text-slate-300 leading-relaxed">
+            Germany (€75k gross) and Netherlands (€82k gross) yield €3,400–€4,200 net monthly. While high taxes (38–42%) fund comprehensive public healthcare, subsidized childcare, and 30 mandatory paid vacation days, the primary dividend is guaranteed Permanent Residency in 21 months and an EU passport in 3–5 years.
+          </p>
+          <div class="mt-4 pt-3 border-t border-slate-800 text-[11px] text-slate-400">
+            <strong>Verdict:</strong> Lower nominal wealth accumulation, but unrivaled quality of life and sovereign passport security.
+          </div>
+        </div>
+
+        <!-- The Remote Contractor Model -->
+        <div class="glass-card p-6 border-l-4 border-l-emerald-500">
+          <div class="flex items-center gap-2 text-emerald-400 font-bold text-sm mb-2">
+            <i data-lucide="sparkles" class="w-4 h-4"></i>
+            <span>Remote India: The Ultimate Macro Arbitrage</span>
+          </div>
+          <p class="text-xs text-slate-300 leading-relaxed">
+            Billing $4,000–$6,000/mo ($48k–$72k/yr) directly to US/EU startups from India combines the best of all worlds: zero visa vulnerabilities, Section 44ADA 50% deemed tax rates (~10% effective), and living at a 1:20 PPP multiple in a Tier-1 or Tier-2 city, saving 70%+ of gross income.
+          </p>
+          <div class="mt-4 pt-3 border-t border-slate-800 text-[11px] text-slate-400">
+            <strong>Verdict:</strong> The highest risk-adjusted net savings rate in global tech today.
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ======================================================================
+       SECTION 3: THE REMOTE GLOBAL ARBITRAGE MODEL & 44ADA
+       ====================================================================== -->
+  <section id="remote-arbitrage" class="py-20 border-t border-slate-800/80 relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Section Header -->
+      <div class="max-w-3xl mb-12">
+        <div class="inline-flex items-center gap-2 text-xs font-bold text-emerald-400 uppercase tracking-widest font-mono mb-2">
+          <span>02 / REMOTE CONTRACTOR BLUEPRINT</span>
+        </div>
+        <h2 class="text-2xl sm:text-4xl font-extrabold text-white tracking-tight">
+          The Remote Global Arbitrage Model
+        </h2>
+        <p class="mt-3 text-sm sm:text-base text-slate-400 leading-relaxed">
+          How modern software engineers bill overseas entities in hard currency, claim zero-rated GST export status, and legally retain up to 90% of their gross earnings under Section 44ADA.
+        </p>
+      </div>
+
+      <!-- Core 4 Pillars Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+        
+        <div class="glass-card p-5">
+          <div class="w-9 h-9 rounded-lg bg-emerald-500/10 border border-emerald-500/30 flex items-center justify-center text-emerald-400 mb-3">
+            <i data-lucide="file-check-2" class="w-5 h-5"></i>
+          </div>
+          <h3 class="font-bold text-sm text-white">1. GST LUT Zero-Rated Export</h3>
+          <p class="mt-2 text-xs text-slate-400 leading-relaxed">
+            Submit Form RFD-11 (Letter of Undertaking) annually on the GST portal. This allows software export without paying the 18% Integrated GST (IGST) upfront, eliminating cash-flow blockage.
+          </p>
+        </div>
+
+        <div class="glass-card p-5">
+          <div class="w-9 h-9 rounded-lg bg-cyan-500/10 border border-cyan-500/30 flex items-center justify-center text-cyan-400 mb-3">
+            <i data-lucide="shield-alert" class="w-5 h-5"></i>
+          </div>
+          <h3 class="font-bold text-sm text-white">2. Mandatory FIRC / e-FIRC</h3>
+          <p class="mt-2 text-xs text-slate-400 leading-relaxed">
+            Under FEMA, every inward remittance must carry an RBI Purpose Code (e.g. <code>P0802</code> for Software Services). Collect the electronic Foreign Inward Remittance Certificate to prove export legitimacy.
+          </p>
+        </div>
+
+        <div class="glass-card p-5">
+          <div class="w-9 h-9 rounded-lg bg-indigo-500/10 border border-indigo-500/30 flex items-center justify-center text-indigo-400 mb-3">
+            <i data-lucide="percent" class="w-5 h-5"></i>
+          </div>
+          <h3 class="font-bold text-sm text-white">3. Section 44ADA Presumptive</h3>
+          <p class="mt-2 text-xs text-slate-400 leading-relaxed">
+            For professional gross receipts up to ₹75 Lakhs (~$87k USD) received digitally, the Income Tax Department legally deems 50% as expenses and only 50% as taxable profit, with zero audit required.
+          </p>
+        </div>
+
+        <div class="glass-card p-5">
+          <div class="w-9 h-9 rounded-lg bg-amber-500/10 border border-amber-500/30 flex items-center justify-center text-amber-400 mb-3">
+            <i data-lucide="coins" class="w-5 h-5"></i>
+          </div>
+          <h3 class="font-bold text-sm text-white">4. EEFC Foreign Currency Account</h3>
+          <p class="mt-2 text-xs text-slate-400 leading-relaxed">
+            Hold foreign exchange in an Exchange Earner's Foreign Currency (EEFC) account with an Indian bank to avoid immediate conversion, timing exchange conversions during favorable rate peaks.
+          </p>
+        </div>
+
+      </div>
+
+      <!-- Interactive 44ADA vs Salaried Tax Calculator Widget -->
+      <div class="glass-card p-6 sm:p-8 border border-slate-800/80 bg-slate-900/60">
+        <div class="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-6 pb-6 border-b border-slate-800">
+          <div>
+            <div class="flex items-center gap-2 text-cyan-400 text-xs font-bold font-mono uppercase">
+              <i data-lucide="sliders" class="w-4 h-4"></i>
+              <span>Live Arbitrage Engine</span>
+            </div>
+            <h3 class="text-xl sm:text-2xl font-extrabold text-white mt-1">Section 44ADA vs. Salaried Tax Simulator</h3>
+            <p class="text-xs text-slate-400 mt-1">Adjust annual foreign billing to see legal tax savings under the New Tax Regime (Section 115BAC).</p>
+          </div>
+          <div class="flex items-center gap-3">
+            <button data-modal="taxFormula" class="px-3.5 py-2 rounded-lg text-xs font-semibold bg-slate-800 hover:bg-slate-700 text-cyan-400 border border-slate-700 transition-colors flex items-center gap-1.5">
+              <i data-lucide="help-circle" class="w-3.5 h-3.5"></i>
+              <span>Tax Code Rules</span>
+            </button>
+          </div>
+        </div>
+
+        <div class="mt-6 grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+          
+          <!-- Slider Input Area (5 Cols) -->
+          <div class="lg:col-span-5 space-y-5">
+            <div>
+              <div class="flex justify-between text-xs text-slate-300 font-semibold mb-2">
+                <span>Annual Overseas Revenue:</span>
+                <span id="tax-usd-label" class="text-emerald-400 font-mono-num text-sm font-bold">$60,000 USD</span>
+              </div>
+              <input type="range" id="tax-usd-input" min="30000" max="86000" step="2000" value="60000" class="w-full">
+              <div class="flex justify-between text-[11px] text-slate-500 font-mono-num mt-1">
+                <span>$30,000 (~₹25.9L)</span>
+                <span>$86,000 (~₹74.3L Max 44ADA Limit)</span>
+              </div>
+            </div>
+
+            <div class="p-4 rounded-xl bg-slate-950/70 border border-slate-800/80 space-y-2">
+              <div class="flex justify-between text-xs">
+                <span class="text-slate-400">Gross INR Realization (@ ₹86.4/$):</span>
+                <span id="tax-out-gross-inr" class="font-bold text-white font-mono-num">₹51.84 Lakhs</span>
+              </div>
+              <div class="flex justify-between text-xs">
+                <span class="text-slate-400">44ADA Deemed Taxable Profit (50%):</span>
+                <span id="tax-out-deemed-profit" class="font-bold text-cyan-400 font-mono-num">₹25.92 Lakhs</span>
+              </div>
+              <div class="flex justify-between text-xs pt-2 border-t border-slate-800">
+                <span class="text-slate-400">Effective Tax on Gross Revenue:</span>
+                <span id="tax-out-effective-rate" class="font-bold text-emerald-400 font-mono-num">9.2%</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Comparison Display Cards (7 Cols) -->
+          <div class="lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-4">
+            
+            <!-- 44ADA Remote Contractor Card -->
+            <div class="p-5 rounded-xl bg-emerald-950/20 border border-emerald-500/30 relative">
+              <div class="text-[11px] font-bold uppercase font-mono text-emerald-400">Remote 44ADA Contractor</div>
+              <div class="text-2xl font-extrabold text-white font-mono-num mt-2" id="tax-out-44ada-tax">₹4.82 Lakhs</div>
+              <div class="text-xs text-emerald-400 font-semibold mt-0.5">Total Annual Tax Due</div>
+              <p class="text-[11px] text-slate-400 mt-3 leading-relaxed">
+                Eligible under 44ADA with 50% deemed business expenses. Zero audit, zero books, filed on ITR-4.
+              </p>
+            </div>
+
+            <!-- Indian Salaried Employee Card -->
+            <div class="p-5 rounded-xl bg-rose-950/20 border border-rose-500/30 relative">
+              <div class="text-[11px] font-bold uppercase font-mono text-rose-400">Standard Indian Salaried SWE</div>
+              <div class="text-2xl font-extrabold text-white font-mono-num mt-2" id="tax-out-salaried-tax">₹13.62L (26.3%)</div>
+              <div class="text-xs text-rose-400 font-semibold mt-0.5">Total Annual TDS Deducted</div>
+              <p class="text-[11px] text-slate-400 mt-3 leading-relaxed">
+                Subject to standard progressive slab rates with only standard deduction (₹75k) available.
+              </p>
+            </div>
+
+            <!-- Total Savings Highlight Banner -->
+            <div class="sm:col-span-2 p-4 rounded-xl bg-gradient-to-r from-cyan-950/40 via-emerald-950/40 to-slate-950 border border-cyan-500/40 flex items-center justify-between">
+              <div>
+                <div class="text-xs text-slate-400">Total Legal Annual Tax Retained:</div>
+                <div class="text-xl font-bold text-cyan-300 font-mono-num" id="tax-out-annual-saved">₹8.80 Lakhs / yr</div>
+              </div>
+              <div class="text-right">
+                <span class="inline-flex items-center gap-1 px-3 py-1 rounded-full text-xs font-bold bg-emerald-500/20 text-emerald-300 border border-emerald-500/40">
+                  <i data-lucide="trending-up" class="w-3.5 h-3.5"></i>
+                  Extra In-Pocket Surplus
+                </span>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ======================================================================
+       SECTION 4: ECONOMICS DEEP DIVE — PPP & THE "4-DAY iPHONE"
+       ====================================================================== -->
+  <section id="ppp-iphone" class="py-20 border-t border-slate-800/80 bg-slate-950/40 relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Section Header -->
+      <div class="max-w-3xl mb-12">
+        <div class="inline-flex items-center gap-2 text-xs font-bold text-cyan-400 uppercase tracking-widest font-mono mb-2">
+          <span>03 / MACROECONOMIC REALITY</span>
+        </div>
+        <h2 class="text-2xl sm:text-4xl font-extrabold text-white tracking-tight">
+          The 4-Day iPhone & Purchasing Power Parity (PPP)
+        </h2>
+        <p class="mt-3 text-sm sm:text-base text-slate-400 leading-relaxed">
+          The core economic puzzle: Why a haircut or home-cooked meal is 5x to 15x cheaper in India, while a Sony PS5 or Apple iPhone 16 Pro costs identical nominal prices everywhere.
+        </p>
+      </div>
+
+      <!-- The Core Economic Mechanics: Two Column Card -->
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
+        
+        <!-- Local Non-Tradables -->
+        <div class="glass-card p-6 border-t-4 border-t-emerald-400">
+          <div class="flex items-center justify-between mb-3">
+            <span class="text-xs font-bold uppercase font-mono text-emerald-400">Domestic Labor Intensive</span>
+            <span class="text-xs px-2 py-0.5 rounded bg-emerald-500/10 text-emerald-400 border border-emerald-500/30">1 USD ≈ ₹20 PPP</span>
+          </div>
+          <h3 class="text-lg font-bold text-white">Local Non-Tradables (Haircuts, Rent, Meals)</h3>
+          <p class="mt-3 text-xs text-slate-300 leading-relaxed">
+            Under the <strong>Balassa-Samuelson effect</strong>, domestic services cannot be physically shipped across borders. A barber in San Francisco charges $35 because local rent and minimum wage benchmarks demand it. A barber in Bengaluru charges ₹200 ($2.30) because Indian service labor productivity and living costs are benchmarked domestically.
+          </p>
+          <div class="mt-4 p-3 rounded-lg bg-slate-900/80 border border-slate-800 text-[11px] text-slate-400">
+            <strong>Key Consequence:</strong> Anyone with foreign currency earnings lives like royalty in domestic services and hospitality in India.
+          </div>
+        </div>
+
+        <!-- Global Tradables -->
+        <div class="glass-card p-6 border-t-4 border-t-rose-400">
+          <div class="flex items-center justify-between mb-3">
+            <span class="text-xs font-bold uppercase font-mono text-rose-400">Capital & Silicon Intensive</span>
+            <span class="text-xs px-2 py-0.5 rounded bg-rose-500/10 text-rose-400 border border-rose-500/30">1 USD = ₹86 Market Rate</span>
+          </div>
+          <h3 class="text-lg font-bold text-white">Global Tradables (iPhones, GPUs, MacBooks)</h3>
+          <p class="mt-3 text-xs text-slate-300 leading-relaxed">
+            An iPhone is not an Indian product; it contains TSMC 3nm silicon wafers fabricated in Taiwan, Sony camera sensors from Japan, Samsung OLED panels from Korea, and Apple IP from California. These components are paid for in USD. Apple cannot discount an iPhone to ₹30,000 in India without triggering instant global gray-market smuggling.
+          </p>
+          <div class="mt-4 p-3 rounded-lg bg-slate-900/80 border border-slate-800 text-[11px] text-slate-400">
+            <strong>Key Consequence:</strong> Global electronics command identical nominal prices, forcing developing nations to pay a heavy "labor hours" penalty.
+          </div>
+        </div>
+
+      </div>
+
+      <!-- PPP Basket Table -->
+      <div class="mb-14">
+        <div class="flex items-center justify-between mb-4">
+          <h3 class="text-base sm:text-lg font-bold text-white flex items-center gap-2">
+            <i data-lucide="shopping-cart" class="w-5 h-5 text-cyan-400"></i>
+            <span>The Reality Basket: US vs. India Price Divergence</span>
+          </h3>
+          <span class="text-xs text-slate-500 font-mono">Normalized @ ₹86.4 / USD</span>
+        </div>
+        <div class="custom-table-container glass-card overflow-hidden">
+          <table class="custom-table">
+            <thead>
+              <tr>
+                <th scope="col">Goods or Service Item</th>
+                <th scope="col">USA Cost (USD / INR)</th>
+                <th scope="col">India Cost (INR / USD)</th>
+                <th scope="col">Price Divergence Ratio</th>
+                <th scope="col">Underlying Economic Driver</th>
+              </tr>
+            </thead>
+            <tbody id="ppp-basket-body">
+              <!-- Dynamically populated by js/app.js -->
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- The Path to the 4-Day iPhone: Timeline & Chart -->
+      <div class="glass-card p-6 sm:p-8">
+        <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-6">
+          <div>
+            <div class="text-xs font-bold font-mono text-cyan-400 uppercase">Productivity Convergence Curve</div>
+            <h3 class="text-xl sm:text-2xl font-extrabold text-white mt-1">The Path to the 4-Day iPhone (2016–2035)</h3>
+            <p class="text-xs text-slate-400 mt-1">Working days required for a software engineer to afford an Apple flagship phone.</p>
+          </div>
+          <div class="flex items-center gap-4 text-xs font-mono">
+            <span class="flex items-center gap-1.5 text-rose-400">
+              <span class="w-3 h-3 rounded bg-rose-500 inline-block"></span> India Tech SWE
+            </span>
+            <span class="flex items-center gap-1.5 text-emerald-400">
+              <span class="w-3 h-3 rounded bg-emerald-500 inline-block"></span> US Tech SWE
+            </span>
+          </div>
+        </div>
+
+        <!-- Chart Container -->
+        <div class="h-72 sm:h-80 w-full">
+          <canvas id="iphoneTimelineChart"></canvas>
+        </div>
+
+        <!-- 3 Catalysts for 2035 Parity -->
+        <div class="mt-8 pt-6 border-t border-slate-800 grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div class="space-y-1.5">
+            <div class="text-xs font-bold text-cyan-400 flex items-center gap-1.5">
+              <span class="w-5 h-5 rounded-full bg-cyan-950 border border-cyan-800 flex items-center justify-center text-[10px]">1</span>
+              <span>Domestic Semiconductor Fabs</span>
+            </div>
+            <p class="text-[11px] text-slate-400 leading-relaxed">
+              Tata Electronics' Dholera 28nm/40nm fab and CG Semi assembly plants reduce component import tariffs from 20% down to baseline domestic manufacturing tax.
+            </p>
+          </div>
+
+          <div class="space-y-1.5">
+            <div class="text-xs font-bold text-emerald-400 flex items-center gap-1.5">
+              <span class="w-5 h-5 rounded-full bg-emerald-950 border border-emerald-800 flex items-center justify-center text-[10px]">2</span>
+              <span>Labor Productivity Convergence</span>
+            </div>
+            <p class="text-[11px] text-slate-400 leading-relaxed">
+              As Indian engineering firms transition from low-margin outsourcing to high-value AI, IP, and proprietary SaaS, nominal software wages compound at 10–12% annually.
+            </p>
+          </div>
+
+          <div class="space-y-1.5">
+            <div class="text-xs font-bold text-indigo-400 flex items-center gap-1.5">
+              <span class="w-5 h-5 rounded-full bg-indigo-950 border border-indigo-800 flex items-center justify-center text-[10px]">3</span>
+              <span>Deep Component Fabrication</span>
+            </div>
+            <p class="text-[11px] text-slate-400 leading-relaxed">
+              Moving from simple screwdriver CKD/SKD assembly to local printed circuit board assembly (PCBA), camera module packaging, and enclosure tooling (Tata Hosur).
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ======================================================================
+       SECTION 5: MACROECONOMICS — THE RUPEE & THE ₹100 DEBATE
+       ====================================================================== -->
+  <section id="rupee-macro" class="py-20 border-t border-slate-800/80 relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Section Header -->
+      <div class="max-w-3xl mb-12">
+        <div class="inline-flex items-center gap-2 text-xs font-bold text-emerald-400 uppercase tracking-widest font-mono mb-2">
+          <span>04 / CURRENCY DYNAMICS</span>
+        </div>
+        <h2 class="text-2xl sm:text-4xl font-extrabold text-white tracking-tight">
+          Macroeconomics: Why ₹1 ≠ $1 and the ₹100/USD Trajectory
+        </h2>
+        <p class="mt-3 text-sm sm:text-base text-slate-400 leading-relaxed">
+          Demystifying the Reserve Bank of India's Managed Float, inflation differentials, and why an orderly 3.2% annual currency depreciation is an engine for Indian tech exports.
+        </p>
+      </div>
+
+      <!-- Macro Content Grid -->
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start mb-12">
+        
+        <!-- Left: Explanatory Breakdown (6 cols) -->
+        <div class="lg:col-span-6 space-y-6">
+          
+          <div class="glass-card p-6">
+            <h3 class="font-bold text-base text-white flex items-center gap-2">
+              <i data-lucide="landmark" class="w-5 h-5 text-cyan-400"></i>
+              <span>The Catastrophe of Artificial 1:1 Parity</span>
+            </h3>
+            <p class="mt-3 text-xs text-slate-300 leading-relaxed">
+              Laymen often ask: <em>"Why doesn't the RBI print money or peg 1 INR = 1 USD so an iPhone costs ₹1,000?"</em><br><br>
+              If the Rupee artificially jumped to ₹1 = $1, India's <strong>$200+ Billion IT services export industry</strong> would vaporize overnight. An Indian software engineer billing $30,000/year would suddenly cost $2,550,000 USD to a US client. Over <strong>5.4 million IT professionals</strong> would face instantaneous termination as global contracts flee to the Philippines, Vietnam, and Eastern Europe.
+            </p>
+          </div>
+
+          <div class="glass-card p-6">
+            <h3 class="font-bold text-base text-white flex items-center gap-2">
+              <i data-lucide="trending-down" class="w-5 h-5 text-amber-400"></i>
+              <span>The 3.2% Natural Depreciation Engine</span>
+            </h3>
+            <p class="mt-3 text-xs text-slate-300 leading-relaxed">
+              Under <strong>Uncovered Interest Rate Parity</strong>, currency depreciation mirrors the long-term inflation differential between two nations. With US core inflation at ~2.5% and Indian CPI inflation at ~5.0%–5.5%, a natural ~3% annual depreciation maintains India's <strong>Real Effective Exchange Rate (REER)</strong> competitiveness.
+            </p>
+          </div>
+
+          <div class="glass-card p-6">
+            <h3 class="font-bold text-base text-white flex items-center gap-2">
+              <i data-lucide="shield-check" class="w-5 h-5 text-emerald-400"></i>
+              <span>The $700+ Billion Forex Fortress</span>
+            </h3>
+            <p class="mt-3 text-xs text-slate-300 leading-relaxed">
+              Unlike the Turkish Lira or Argentine Peso, which suffer unmanaged hyperinflation crashes, the RBI maintains over <strong>$700 Billion in foreign currency reserves</strong>. The central bank intervenes symmetrically: accumulating dollars during global risk-on rallies, and selling dollars during crises to ensure orderly, predictable depreciation without volatility spikes.
+            </p>
+          </div>
+
+        </div>
+
+        <!-- Right: FX History Chart & The ₹100 Debate (6 cols) -->
+        <div class="lg:col-span-6 glass-card p-6 sm:p-8">
+          <div class="flex items-center justify-between mb-4">
+            <div>
+              <div class="text-xs font-mono text-emerald-400 font-bold uppercase">USD/INR Trajectory (1991–2035)</div>
+              <h4 class="text-lg font-bold text-white mt-0.5">The Managed Glidepath to ₹100</h4>
+            </div>
+            <span class="text-xs px-2.5 py-1 rounded-full bg-emerald-500/10 text-emerald-300 border border-emerald-500/30 font-mono-num font-bold">
+              Current: ₹86.42
+            </span>
+          </div>
+
+          <!-- Chart Canvas -->
+          <div class="h-64 sm:h-72 w-full">
+            <canvas id="fxMacroChart"></canvas>
+          </div>
+
+          <!-- The ₹100 Milestone Summary -->
+          <div class="mt-6 p-4 rounded-xl bg-slate-950/70 border border-slate-800 text-xs text-slate-300 space-y-2">
+            <div class="font-bold text-white flex items-center gap-2">
+              <span class="w-2 h-2 rounded-full bg-amber-400"></span>
+              <span>The Double-Edged Sword of ₹100 / USD:</span>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2 text-[11px]">
+              <div class="p-2.5 rounded bg-emerald-950/20 border border-emerald-800/40 text-emerald-300">
+                <strong>Winners:</strong> NRI remitters, remote software contractors, and tech exporters gain larger rupee payouts with zero domestic price shock.
+              </div>
+              <div class="p-2.5 rounded bg-rose-950/20 border border-rose-800/40 text-rose-300">
+                <strong>Losers:</strong> Buyers of imported electronics, crude oil consumers, and parents paying foreign college tuition in USD.
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ======================================================================
+       SECTION 6: COMPLIANCE & AML — LEGAL REMITTANCES VS. BENAMI TRAP
+       ====================================================================== -->
+  <section id="legal-banking" class="py-20 border-t border-slate-800/80 bg-slate-950/40 relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Section Header -->
+      <div class="max-w-3xl mb-12">
+        <div class="inline-flex items-center gap-2 text-xs font-bold text-cyan-400 uppercase tracking-widest font-mono mb-2">
+          <span>05 / STATUTORY & AML COMPLIANCE</span>
+        </div>
+        <h2 class="text-2xl sm:text-4xl font-extrabold text-white tracking-tight">
+          Cross-Border Legal Banking: NRE/NRO vs. The Benami Trap
+        </h2>
+        <p class="mt-3 text-sm sm:text-base text-slate-400 leading-relaxed">
+          How to safely structure multimillion-rupee inward remittances, leverage Section 56 linear relative exemptions, and avoid the catastrophic pitfalls of smurfing and benami property purchases.
+        </p>
+      </div>
+
+      <!-- NRE vs NRO vs Resident Account Comparison Cards -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+        
+        <!-- NRE Account -->
+        <div class="glass-card p-6 border-t-4 border-t-cyan-400">
+          <div class="flex items-center justify-between text-xs font-mono text-cyan-400 mb-2">
+            <span>NON-RESIDENT EXTERNAL</span>
+            <span class="px-2 py-0.5 rounded bg-cyan-500/10 text-cyan-300 border border-cyan-500/30">100% Tax-Free</span>
+          </div>
+          <h3 class="text-xl font-bold text-white">NRE Account</h3>
+          <ul class="mt-4 space-y-2.5 text-xs text-slate-300">
+            <li class="flex items-start gap-2">
+              <i data-lucide="check" class="w-4 h-4 text-cyan-400 shrink-0 mt-0.5"></i>
+              <span><strong>Funding:</strong> Remittances in foreign currency ONLY.</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <i data-lucide="check" class="w-4 h-4 text-cyan-400 shrink-0 mt-0.5"></i>
+              <span><strong>Taxation:</strong> 100% exempt from Indian income tax under Section 10(4)(ii).</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <i data-lucide="check" class="w-4 h-4 text-cyan-400 shrink-0 mt-0.5"></i>
+              <span><strong>Repatriation:</strong> Freely repatriable back abroad anytime with 0% tax & zero RBI limits.</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- NRO Account -->
+        <div class="glass-card p-6 border-t-4 border-t-amber-400">
+          <div class="flex items-center justify-between text-xs font-mono text-amber-400 mb-2">
+            <span>NON-RESIDENT ORDINARY</span>
+            <span class="px-2 py-0.5 rounded bg-amber-500/10 text-amber-300 border border-amber-500/30">Subject to TDS</span>
+          </div>
+          <h3 class="text-xl font-bold text-white">NRO Account</h3>
+          <ul class="mt-4 space-y-2.5 text-xs text-slate-300">
+            <li class="flex items-start gap-2">
+              <i data-lucide="check" class="w-4 h-4 text-amber-400 shrink-0 mt-0.5"></i>
+              <span><strong>Funding:</strong> Domestic Indian earnings (rent, dividends, Indian pensions, asset sales).</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <i data-lucide="check" class="w-4 h-4 text-amber-400 shrink-0 mt-0.5"></i>
+              <span><strong>Taxation:</strong> 30% TDS + cess (reducible to 10%–15% via DTAA TRC).</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <i data-lucide="check" class="w-4 h-4 text-amber-400 shrink-0 mt-0.5"></i>
+              <span><strong>Repatriation:</strong> Capped at $1M USD/year via CA Form 15CA & 15CB clearance.</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Resident Account (Illegal for NRIs) -->
+        <div class="glass-card p-6 border-t-4 border-t-rose-500">
+          <div class="flex items-center justify-between text-xs font-mono text-rose-400 mb-2">
+            <span>RESIDENT SAVINGS</span>
+            <span class="px-2 py-0.5 rounded bg-rose-500/10 text-rose-400 border border-rose-500/30">FEMA Violation for NRIs</span>
+          </div>
+          <h3 class="text-xl font-bold text-white">Resident Savings Account</h3>
+          <ul class="mt-4 space-y-2.5 text-xs text-slate-300">
+            <li class="flex items-start gap-2">
+              <i data-lucide="x" class="w-4 h-4 text-rose-400 shrink-0 mt-0.5"></i>
+              <span><strong>Statutory Bar:</strong> Illegal for NRIs to hold or operate after 182 days abroad.</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <i data-lucide="x" class="w-4 h-4 text-rose-400 shrink-0 mt-0.5"></i>
+              <span><strong>FEMA Penalties:</strong> Up to 3x the balance amount plus confiscation.</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <i data-lucide="alert-octagon" class="w-4 h-4 text-rose-400 shrink-0 mt-0.5"></i>
+              <span><strong>Mandatory Action:</strong> Must convert to NRO immediately upon moving abroad.</span>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- The Benami Trap vs Legal Highway Comparison -->
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
+        
+        <!-- The Smurfing & Benami Trap -->
+        <div class="glass-card p-6 sm:p-8 border-rose-900/60 bg-rose-950/10">
+          <div class="flex items-center justify-between mb-4">
+            <span class="text-xs font-mono font-bold text-rose-400 uppercase flex items-center gap-1.5">
+              <i data-lucide="alert-octagon" class="w-4 h-4"></i>
+              <span>High Risk / Illegal Structuring</span>
+            </span>
+            <button data-modal="benamiRules" class="text-xs text-rose-400 hover:text-rose-300 underline font-semibold">View Law</button>
+          </div>
+          <h3 class="text-xl font-bold text-white">Why "Smurfing" & Benami Purchases ALWAYS Fail</h3>
+          
+          <div class="mt-4 space-y-3 text-xs text-slate-300 leading-relaxed">
+            <p>
+              <strong class="text-rose-300">The ₹50k Non-Relative Illusion:</strong> Many NRIs attempt to bypass scrutiny by sending ₹45,000–₹50,000 to multiple friends and distant relatives to pool funds for buying property in India.
+            </p>
+            <div class="p-3.5 rounded-lg bg-slate-900/90 border border-rose-900/50 space-y-2 text-[11px]">
+              <div class="text-rose-400 font-bold">The Inevitable Enforcement Triggers:</div>
+              <ul class="list-disc pl-4 space-y-1 text-slate-400">
+                <li>Non-relative gifts above ₹50,000 in aggregate are <strong>100% taxable</strong> in the recipient's hands under Section 56(2)(x).</li>
+                <li><strong>FIU-IND Algorithmic Alerts:</strong> Structured clusters just below reporting thresholds generate automatic Suspicious Transaction Reports (STRs) under PMLA.</li>
+                <li><strong>Project Insight AI Matching:</strong> Central Board of Direct Taxes (CBDT) cross-matches bank deposit clusters with PAN/Aadhaar records, issuing automated scrutiny notices.</li>
+              </ul>
+            </div>
+            <div class="p-3 rounded-lg bg-rose-950/40 border border-rose-800 text-rose-300 text-[11px] font-semibold">
+              ⚠️ <strong>Benami Act Penalties:</strong> Absolute property confiscation by the government + 1 to 7 years rigorous imprisonment + 25% fine of Fair Market Value. Section 4 prevents the NRI from ever suing to recover the property!
+            </div>
+          </div>
+        </div>
+
+        <!-- The Safe Legal Highway -->
+        <div class="glass-card p-6 sm:p-8 border-emerald-900/60 bg-emerald-950/10">
+          <div class="flex items-center justify-between mb-4">
+            <span class="text-xs font-mono font-bold text-emerald-400 uppercase flex items-center gap-1.5">
+              <i data-lucide="shield-check" class="w-4 h-4"></i>
+              <span>The Compliant Highway</span>
+            </span>
+            <span class="text-xs px-2 py-0.5 rounded bg-emerald-500/20 text-emerald-300 font-mono">100% Audit-Proof</span>
+          </div>
+          <h3 class="text-xl font-bold text-white">The Clean NRI Wealth Roadmap</h3>
+          
+          <div class="mt-4 space-y-3.5 text-xs text-slate-300 leading-relaxed">
+            <div class="flex items-start gap-3 p-3 rounded-lg bg-slate-900/80 border border-slate-800">
+              <span class="w-6 h-6 rounded-full bg-emerald-950 border border-emerald-500 text-emerald-400 flex items-center justify-center font-bold text-xs shrink-0">1</span>
+              <div>
+                <strong class="text-slate-100">Section 56 Linear Relative Exemption:</strong>
+                <p class="text-slate-400 text-[11px] mt-0.5">Gifts to parents, spouse, siblings, and children are <strong>100% tax-free</strong> with ZERO upper financial limit. Execute a simple notarized Gift Deed on stamp paper.</p>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-3 p-3 rounded-lg bg-slate-900/80 border border-slate-800">
+              <span class="w-6 h-6 rounded-full bg-emerald-950 border border-emerald-500 text-emerald-400 flex items-center justify-center font-bold text-xs shrink-0">2</span>
+              <div>
+                <strong class="text-slate-100">Direct Title Deed in NRI Name:</strong>
+                <p class="text-slate-400 text-[11px] mt-0.5">Never register property under third-party names. Title must reflect the NRI's passport and PAN, paid directly from NRE/NRO banking channels via RTGS/Cheque.</p>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-3 p-3 rounded-lg bg-slate-900/80 border border-slate-800">
+              <span class="w-6 h-6 rounded-full bg-emerald-950 border border-emerald-500 text-emerald-400 flex items-center justify-center font-bold text-xs shrink-0">3</span>
+              <div>
+                <strong class="text-slate-100">Consulate-Attested Power of Attorney (POA):</strong>
+                <p class="text-slate-400 text-[11px] mt-0.5">If you cannot travel to India for registry, execute a Special Power of Attorney in favor of a parent/sibling, authenticated at your local Indian Embassy, and registered in India.</p>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-3 p-3 rounded-lg bg-slate-900/80 border border-slate-800">
+              <span class="w-6 h-6 rounded-full bg-emerald-950 border border-emerald-500 text-emerald-400 flex items-center justify-center font-bold text-xs shrink-0">4</span>
+              <div>
+                <strong class="text-slate-100">Mandatory RBI Purpose Codes:</strong>
+                <p class="text-slate-400 text-[11px] mt-0.5">Always tag SWIFT wire transfers with <code>P1301</code> (Family maintenance), <code>P0019</code> (NRE deposit), or <code>P0013</code> (Property purchase) to ensure seamless FIRC generation.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ======================================================================
+       SECTION 7: INTERACTIVE CALCULATORS SUITE
+       ====================================================================== -->
+  <section id="calculators" class="py-20 border-t border-slate-800/80 relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Section Header -->
+      <div class="max-w-3xl mb-12">
+        <div class="inline-flex items-center gap-2 text-xs font-bold text-cyan-400 uppercase tracking-widest font-mono mb-2">
+          <span>06 / INTERACTIVE DECISION ENGINES</span>
+        </div>
+        <h2 class="text-2xl sm:text-4xl font-extrabold text-white tracking-tight">
+          Interactive Calculators & Decision Tools
+        </h2>
+        <p class="mt-3 text-sm sm:text-base text-slate-400 leading-relaxed">
+          Simulate your exact purchasing power, calculate required workdays for flagship hardware, and build your multi-year debt-free Indian real estate plan.
+        </p>
+      </div>
+
+      <!-- Calculator 1: Gadget "Days of Work" Calculator -->
+      <div class="glass-card p-6 sm:p-8 mb-12">
+        <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 pb-6 border-b border-slate-800">
+          <div>
+            <div class="text-xs font-mono text-cyan-400 font-bold uppercase">Calculator #1</div>
+            <h3 class="text-xl sm:text-2xl font-extrabold text-white mt-0.5">Gadget "Days of Work" Calculator</h3>
+            <p class="text-xs text-slate-400 mt-1">Calculates the true labor penalty of consumer silicon across different income tiers.</p>
+          </div>
+          <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-mono bg-cyan-950/50 text-cyan-400 border border-cyan-800">
+            <i data-lucide="zap" class="w-3.5 h-3.5"></i>
+            Real-time Math
+          </span>
+        </div>
+
+        <div class="mt-6 grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+          
+          <!-- Inputs (5 cols) -->
+          <div class="lg:col-span-5 space-y-4">
+            
+            <!-- Salary Input & Currency -->
+            <div>
+              <label for="calc-salary" class="block text-xs font-semibold text-slate-300 mb-1">Monthly Net Take-Home Salary:</label>
+              <div class="flex rounded-lg overflow-hidden border border-slate-700 bg-slate-900">
+                <select id="calc-currency" class="bg-slate-800 text-xs font-bold text-cyan-400 px-3 py-2.5 border-r border-slate-700 focus:outline-none">
+                  <option value="INR">INR (₹)</option>
+                  <option value="USD">USD ($)</option>
+                  <option value="EUR">EUR (€)</option>
+                  <option value="GBP">GBP (£)</option>
+                </select>
+                <input type="number" id="calc-salary" value="95000" min="1000" step="5000" class="w-full bg-slate-900 px-3 py-2.5 text-sm text-white font-mono-num focus:outline-none" placeholder="e.g. 95000">
+              </div>
+              <p class="text-[11px] text-slate-500 mt-1">Default: ₹95,000/mo (Mid-level SWE in India)</p>
+            </div>
+
+            <!-- Working Days / Month -->
+            <div>
+              <label for="calc-workdays" class="block text-xs font-semibold text-slate-300 mb-1">Working Days per Month:</label>
+              <input type="number" id="calc-workdays" value="22" min="10" max="31" class="w-full bg-slate-900 border border-slate-700 rounded-lg px-3 py-2 text-sm text-white font-mono-num focus:outline-none">
+              <p class="text-[11px] text-slate-500 mt-1">Standard: 22 working days (8 hours/day)</p>
+            </div>
+
+            <!-- Product Selection -->
+            <div>
+              <label for="calc-product-select" class="block text-xs font-semibold text-slate-300 mb-1">Select Hardware / Gadget:</label>
+              <select id="calc-product-select" class="w-full bg-slate-900 border border-slate-700 rounded-lg px-3 py-2.5 text-xs text-white focus:outline-none">
+                <option value="iphone16pro">Apple iPhone 16 Pro 256GB (₹1,29,900 / $1,099)</option>
+                <option value="iphone16promax">Apple iPhone 16 Pro Max 256GB (₹1,44,900 / $1,199)</option>
+                <option value="iphone16">Apple iPhone 16 Base 128GB (₹79,900 / $799)</option>
+                <option value="ps5slim">Sony PlayStation 5 Slim Disc (₹54,990 / $499)</option>
+                <option value="macbookpro14">Apple MacBook Pro 14" M3 Pro (₹1,99,900 / $1,999)</option>
+                <option value="custom">Custom Price Input...</option>
+              </select>
+            </div>
+
+            <!-- Custom Cost Wrapper (hidden by default) -->
+            <div id="calc-custom-cost-wrapper" class="hidden">
+              <label for="calc-custom-cost" class="block text-xs font-semibold text-slate-300 mb-1">Custom Product Price (INR ₹):</label>
+              <input type="number" id="calc-custom-cost" value="100000" min="1000" class="w-full bg-slate-900 border border-slate-700 rounded-lg px-3 py-2 text-sm text-white font-mono-num focus:outline-none">
+            </div>
+
+          </div>
+
+          <!-- Outputs & Benchmark Display (7 cols) -->
+          <div class="lg:col-span-7 space-y-4">
+            
+            <div class="p-5 rounded-xl bg-slate-950/80 border border-slate-800 grid grid-cols-2 gap-4">
+              <div>
+                <div class="text-xs text-slate-400 font-medium">Days of Labor Required:</div>
+                <div class="text-3xl sm:text-4xl font-extrabold text-cyan-400 font-mono-num mt-1" id="calc-out-days">30.1</div>
+                <div class="text-xs text-slate-400 mt-1 font-mono-num" id="calc-out-income-pct">137% of monthly net</div>
+              </div>
+
+              <div>
+                <div class="text-xs text-slate-400 font-medium">Equivalent Work Hours:</div>
+                <div class="text-3xl sm:text-4xl font-extrabold text-emerald-400 font-mono-num mt-1" id="calc-out-hours">241</div>
+                <div class="text-xs text-slate-400 mt-1">Based on 8 hr workdays</div>
+              </div>
+            </div>
+
+            <!-- Global Benchmark Comparison -->
+            <div class="p-4 rounded-xl bg-slate-900/60 border border-slate-800 space-y-3">
+              <div class="flex items-center justify-between text-xs">
+                <span class="text-slate-300 font-semibold">Comparison Against Global Peers:</span>
+                <span id="calc-out-us-comp" class="text-xs font-bold text-amber-400">⚠️ Requires 12.5x more days than US SWE</span>
+              </div>
+
+              <!-- Visual Progress Meter -->
+              <div class="w-full bg-slate-800 h-3 rounded-full overflow-hidden">
+                <div id="calc-progress-fill" class="h-full bg-gradient-to-r from-emerald-500 via-cyan-500 to-rose-500 transition-all duration-300" style="width: 86%;"></div>
+              </div>
+
+              <div class="flex justify-between text-[10px] text-slate-500 font-mono">
+                <span>0 Days</span>
+                <span class="text-emerald-400 font-bold">US SWE (2.4 Days)</span>
+                <span class="text-cyan-400 font-bold">Target 2035 (5.2 Days)</span>
+                <span>35+ Days</span>
+              </div>
+            </div>
+
+            <!-- Economic Verdict -->
+            <div class="p-3.5 rounded-lg bg-cyan-950/20 border border-cyan-500/30 text-xs text-slate-300 flex items-start gap-2.5">
+              <i data-lucide="info" class="w-4 h-4 text-cyan-400 shrink-0 mt-0.5"></i>
+              <div id="calc-verdict-text">
+                2026 Structural Gap: Global silicon tradables command a heavy labor penalty under standard domestic wage structures.
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Calculator 2: Cross-Border Savings Simulator ("The 3-Year House Plan") -->
+      <div class="glass-card p-6 sm:p-8">
+        <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 pb-6 border-b border-slate-800">
+          <div>
+            <div class="text-xs font-mono text-emerald-400 font-bold uppercase">Calculator #2</div>
+            <h3 class="text-xl sm:text-2xl font-extrabold text-white mt-0.5">The Cross-Border Savings Simulator</h3>
+            <p class="text-xs text-slate-400 mt-1">Model the "3-Year House Plan": Harness currency depreciation + compound yield for debt-free real estate.</p>
+          </div>
+          <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-mono bg-emerald-950/50 text-emerald-400 border border-emerald-800">
+            <i data-lucide="home" class="w-3.5 h-3.5"></i>
+            Debt-Free Property
+          </span>
+        </div>
+
+        <div class="mt-6 grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+          
+          <!-- Inputs Column (5 cols) -->
+          <div class="lg:col-span-5 space-y-5">
+            
+            <!-- Monthly Foreign Savings -->
+            <div>
+              <label for="house-savings" class="block text-xs font-semibold text-slate-300 mb-1">Monthly Foreign Savings Remitted:</label>
+              <div class="flex rounded-lg overflow-hidden border border-slate-700 bg-slate-900">
+                <select id="house-currency" class="bg-slate-800 text-xs font-bold text-emerald-400 px-3 py-2.5 border-r border-slate-700 focus:outline-none">
+                  <option value="EUR">EUR (€)</option>
+                  <option value="USD">USD ($)</option>
+                  <option value="GBP">GBP (£)</option>
+                </select>
+                <input type="number" id="house-savings" value="2300" min="500" step="100" class="w-full bg-slate-900 px-3 py-2.5 text-sm text-white font-mono-num focus:outline-none" placeholder="e.g. 2300">
+              </div>
+              <p class="text-[11px] text-slate-500 mt-1">Default: €2,300/mo (~$2,500/mo typical EU tech savings surplus)</p>
+            </div>
+
+            <!-- Target Duration (Years) Slider -->
+            <div>
+              <div class="flex justify-between text-xs text-slate-300 font-semibold mb-1">
+                <span>Accumulation Duration:</span>
+                <span id="house-duration-label" class="text-cyan-400 font-mono-num font-bold">3 Years</span>
+              </div>
+              <input type="range" id="house-duration" min="1" max="7" step="1" value="3" class="w-full">
+              <div class="flex justify-between text-[10px] text-slate-500 font-mono mt-1">
+                <span>1 Year</span>
+                <span>3 Years</span>
+                <span>5 Years</span>
+                <span>7 Years</span>
+              </div>
+            </div>
+
+            <!-- Expected Rupee Depreciation (% p.a.) Slider -->
+            <div>
+              <div class="flex justify-between text-xs text-slate-300 font-semibold mb-1">
+                <span>Projected INR Depreciation (% p.a.):</span>
+                <span id="house-depreciation-label" class="text-amber-400 font-mono-num font-bold">3.2% p.a.</span>
+              </div>
+              <input type="range" id="house-depreciation" min="0" max="6" step="0.5" value="3.2" class="w-full">
+              <div class="flex justify-between text-[10px] text-slate-500 font-mono mt-1">
+                <span>0% (Flat)</span>
+                <span>3.2% (RBI Natural Float)</span>
+                <span>6.0% (Risk Shock)</span>
+              </div>
+            </div>
+
+            <!-- Investment Yield / NRE FD Return Slider -->
+            <div>
+              <div class="flex justify-between text-xs text-slate-300 font-semibold mb-1">
+                <span>NRE FD / Investment Yield (% p.a.):</span>
+                <span id="house-yield-label" class="text-emerald-400 font-mono-num font-bold">7.1% p.a.</span>
+              </div>
+              <input type="range" id="house-yield" min="0" max="12" step="0.5" value="7.1" class="w-full">
+              <div class="flex justify-between text-[10px] text-slate-500 font-mono mt-1">
+                <span>0% (Cash)</span>
+                <span>7.1% (Tax-Free NRE FD)</span>
+                <span>12.0% (Equity SIP)</span>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Outputs & Purchasing Power Benchmarks (7 cols) -->
+          <div class="lg:col-span-7 space-y-5">
+            
+            <!-- Summary KPI Box -->
+            <div class="p-5 rounded-xl bg-slate-950/80 border border-slate-800 grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div>
+                <div class="text-xs text-slate-400 font-medium">Total Converted INR Corpus:</div>
+                <div class="text-3xl font-extrabold text-emerald-400 font-mono-num mt-1" id="house-out-corpus-inr">₹94.2 Lakhs</div>
+                <div class="text-xs text-cyan-300 mt-1 font-mono-num" id="house-out-corpus-foreign">€92,400 accumulated</div>
+              </div>
+
+              <div>
+                <div class="text-xs text-slate-400 font-medium">Rupee Depreciation Kicker:</div>
+                <div class="text-2xl font-bold text-amber-400 font-mono-num mt-1" id="house-out-fx-kicker">+₹7.8L gained purely via FX</div>
+                <div class="text-xs text-slate-400 mt-1">Surplus compared to static rate</div>
+              </div>
+            </div>
+
+            <!-- Real Estate Purchasing Power Feasibility -->
+            <div class="p-5 rounded-xl bg-slate-900/60 border border-slate-800 space-y-4">
+              <div class="text-xs font-bold text-white uppercase tracking-wider font-mono">
+                Debt-Free Real Estate Purchase Benchmarks:
+              </div>
+
+              <!-- Tier-2 City (Kochi / Chandigarh / Indore / Jaipur / Ahmedabad) -->
+              <div>
+                <div class="flex justify-between text-xs mb-1">
+                  <span class="text-slate-300 font-medium">Tier-2 City Luxury 3BHK / Villa (Benchmark: ₹85 Lakhs):</span>
+                  <span id="house-out-tier2-pct" class="font-bold text-emerald-400 font-mono-num">100% Funded</span>
+                </div>
+                <div class="w-full bg-slate-800 h-2.5 rounded-full overflow-hidden">
+                  <div id="house-out-tier2-fill" class="h-full bg-emerald-500 transition-all duration-300" style="width: 100%;"></div>
+                </div>
+                <p class="text-[10px] text-slate-500 mt-1">100% debt-free ownership in high-growth regional hubs.</p>
+              </div>
+
+              <!-- Tier-1 City (Bengaluru / Mumbai Suburbs / Gurgaon / Pune) -->
+              <div>
+                <div class="flex justify-between text-xs mb-1">
+                  <span class="text-slate-300 font-medium">Tier-1 City Premium 2BHK/3BHK (Benchmark: ₹1.5 Crores):</span>
+                  <span id="house-out-tier1-pct" class="font-bold text-cyan-400 font-mono-num">63% Funded</span>
+                </div>
+                <div class="w-full bg-slate-800 h-2.5 rounded-full overflow-hidden">
+                  <div id="house-out-tier1-fill" class="h-full bg-cyan-500 transition-all duration-300" style="width: 63%;"></div>
+                </div>
+                <p class="text-[10px] text-slate-500 mt-1">Sufficient for 60%+ down payment, minimal low-interest domestic loan needed.</p>
+              </div>
+
+            </div>
+
+            <!-- Chart.js Corpus Growth Canvas -->
+            <div class="h-56 w-full pt-2">
+              <canvas id="housePlanChart"></canvas>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ======================================================================
+       SECTION 8: EXPANDABLE KNOWLEDGE BASE & FAQ ACCORDION
+       ====================================================================== -->
+  <section id="faq" class="py-20 border-t border-slate-800/80 bg-slate-950/40 relative">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Section Header -->
+      <div class="text-center mb-12">
+        <div class="inline-flex items-center gap-2 text-xs font-bold text-cyan-400 uppercase tracking-widest font-mono mb-2">
+          <span>07 / PRACTICAL LEGAL KNOWLEDGE</span>
+        </div>
+        <h2 class="text-2xl sm:text-4xl font-extrabold text-white tracking-tight">
+          Frequently Answered Questions
+        </h2>
+        <p class="mt-3 text-sm sm:text-base text-slate-400">
+          Statutory answers to critical FEMA, Section 44ADA, and cross-border remittance questions.
+        </p>
+      </div>
+
+      <!-- FAQ Container (Populated by js/app.js) -->
+      <div id="faq-container" class="space-y-4">
+        <!-- Rendered dynamically -->
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ======================================================================
+       FOOTER
+       ====================================================================== -->
+  <footer class="bg-slate-950 border-t border-slate-800/80 py-12 text-slate-400 text-xs">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
+      
+      <div class="flex flex-col md:flex-row items-start md:items-center justify-between gap-6 pb-8 border-b border-slate-800/60">
+        <div class="flex items-center gap-3">
+          <div class="w-8 h-8 rounded-lg bg-gradient-to-br from-cyan-500 to-emerald-500 flex items-center justify-center p-0.5">
+            <div class="w-full h-full bg-slate-950 rounded-[6px] flex items-center justify-center">
+              <i data-lucide="globe-2" class="w-4 h-4 text-cyan-400"></i>
+            </div>
+          </div>
+          <div>
+            <div class="font-bold text-white text-sm">Global Arbitrage & NRI Wealth Navigator</div>
+            <div class="text-[11px] text-slate-500">The 4-Day iPhone & Global Mobility Blueprint</div>
+          </div>
+        </div>
+
+        <div class="flex flex-wrap items-center gap-6 text-slate-400 font-medium">
+          <a href="#careers-visas" class="hover:text-cyan-400 transition-colors">Careers Matrix</a>
+          <a href="#remote-arbitrage" class="hover:text-cyan-400 transition-colors">Remote 44ADA</a>
+          <a href="#ppp-iphone" class="hover:text-cyan-400 transition-colors">4-Day iPhone</a>
+          <a href="#rupee-macro" class="hover:text-cyan-400 transition-colors">Rupee ₹100 Macro</a>
+          <a href="#legal-banking" class="hover:text-cyan-400 transition-colors">NRE/NRO Banking</a>
+          <a href="#calculators" class="hover:text-cyan-400 transition-colors">Calculators</a>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 text-slate-500 leading-relaxed text-[11px]">
+        <p>
+          <strong>Disclaimer:</strong> This platform is designed solely for informational, macroeconomic analysis, and financial educational purposes. Foreign exchange regulations under FEMA, income tax provisions under Section 44ADA, and real estate laws under the Benami Transactions (Prohibition) Act require personalized validation with a certified Chartered Accountant (CA) or FEMA legal specialist for individual cross-border cases.
+        </p>
+        <p class="md:text-right">
+          Crafted with modern responsive web standards • Dark mode fintech hybrid design • Tested for production deployment on GitHub Pages.
+        </p>
+      </div>
+
+      <div class="text-center text-slate-600 text-[11px] pt-4">
+        © 2026 Global Arbitrage & NRI Wealth Navigator. All rights reserved.
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- ======================================================================
+       INTERACTIVE MODAL OVERLAY
+       ====================================================================== -->
+  <div id="modal-overlay" class="fixed inset-0 z-50 modal-backdrop flex items-center justify-center p-4 hidden">
+    <div class="glass-card max-w-xl w-full bg-slate-950 border border-slate-700/80 rounded-2xl overflow-hidden shadow-2xl relative">
+      <div class="p-5 border-b border-slate-800 flex items-center justify-between">
+        <h3 id="modal-title" class="text-base font-bold text-white flex items-center gap-2">
+          <!-- Populated by JS -->
+        </h3>
+        <button id="modal-close-btn" class="p-1 rounded-lg text-slate-400 hover:text-white hover:bg-slate-800 transition-colors">
+          <i data-lucide="x" class="w-5 h-5"></i>
+        </button>
+      </div>
+      <div id="modal-body" class="p-6 overflow-y-auto max-h-[75vh]">
+        <!-- Populated by JS -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts (Relative paths for GitHub Pages compliance) -->
+  <script src="./js/data.js"></script>
+  <script src="./js/app.js"></script>
+</body>
+</html>
