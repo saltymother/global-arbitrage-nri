@@ -14,3 +14,14 @@
   - RBI managed float macroeconomics and ₹100/USD trajectory
   - Cross-border banking guide (NRE vs NRO vs Benami Transactions Act)
   - Interactive Gadget Days of Work Calculator and 3-Year House Plan Simulator
+
+## [v1.0.1] - 2026-10-05
+- **Commit:** 088b5fb (Signed)
+- **Author:** saltymother <saltymother@users.noreply.github.com>
+- **Type:** Deployment
+- **Status:** Deployed & Verified
+- **GitHub Pages:** https://saltymother.github.io/global-arbitrage-nri/
+- **Summary:**
+  - Verified and signed initial release build
+  - Push to GitHub remote origin main and gh-pages branches
+  - Enabled GitHub Pages deployment workflow
