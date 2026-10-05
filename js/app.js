@@ -1,6 +1,7 @@
 /**
  * Global Arbitrage & NRI Wealth Navigator
  * Interactive Core Application Logic & Financial Calculators
+ * Theme: Classic White & Blue Fintech Editorial
  */
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -34,9 +35,9 @@ function initNavigation() {
   // Scroll blur background
   window.addEventListener('scroll', () => {
     if (window.scrollY > 20) {
-      header.classList.add('bg-slate-950/90', 'shadow-lg', 'border-b', 'border-slate-800/80');
+      header.classList.add('bg-white/95', 'shadow-sm', 'border-b', 'border-slate-200');
     } else {
-      header.classList.remove('bg-slate-950/90', 'shadow-lg', 'border-b', 'border-slate-800/80');
+      header.classList.remove('bg-white/95', 'shadow-sm', 'border-b', 'border-slate-200');
     }
   });
 
@@ -94,34 +95,34 @@ function initCareerTable() {
 
     items.forEach(item => {
       const tr = document.createElement('tr');
-      tr.className = 'border-b border-slate-800/50 hover:bg-slate-800/30 transition-colors';
+      tr.className = 'border-b border-slate-100 hover:bg-blue-50/40 transition-colors';
 
       tr.innerHTML = `
-        <td class="p-4 font-semibold text-slate-100 flex items-center gap-2">
-          <span class="text-xl">${item.flag}</span>
+        <td class="p-4 font-semibold text-slate-900 flex items-center gap-2.5">
+          <span class="text-2xl">${item.flag}</span>
           <div>
-            <div class="font-bold">${item.region}</div>
-            <div class="text-xs text-cyan-400 font-mono-num">${item.visaCategory}</div>
+            <div class="font-bold text-slate-900">${item.region}</div>
+            <div class="text-xs text-blue-700 font-mono-num font-semibold">${item.visaCategory}</div>
           </div>
         </td>
-        <td class="p-4 font-mono-num text-slate-200">
-          <div class="font-bold text-emerald-400">${item.currency} ${item.grossAnnualAvg.toLocaleString()}</div>
-          <div class="text-xs text-slate-400">${item.effectiveTaxRate}</div>
+        <td class="p-4 font-mono-num text-slate-800">
+          <div class="font-bold text-emerald-700">${item.currency} ${item.grossAnnualAvg.toLocaleString()}</div>
+          <div class="text-xs text-slate-500">${item.effectiveTaxRate}</div>
         </td>
-        <td class="p-4 font-mono-num text-slate-200">
-          <div class="font-bold">${item.currency} ${item.netMonthlyAvg.toLocaleString()}/mo</div>
-          <div class="text-xs text-rose-400">Rent: ~${item.currency} ${item.typicalRent.toLocaleString()}</div>
+        <td class="p-4 font-mono-num text-slate-800">
+          <div class="font-bold text-slate-900">${item.currency} ${item.netMonthlyAvg.toLocaleString()}/mo</div>
+          <div class="text-xs text-rose-600 font-medium">Rent: ~${item.currency} ${item.typicalRent.toLocaleString()}</div>
         </td>
-        <td class="p-4 text-xs text-slate-300">
-          <div class="flex items-center gap-1.5 text-amber-400 font-semibold mb-1">
-            <span class="w-1.5 h-1.5 rounded-full bg-amber-400"></span>
+        <td class="p-4 text-xs text-slate-700">
+          <div class="flex items-center gap-1.5 text-amber-700 font-bold mb-1">
+            <span class="w-1.5 h-1.5 rounded-full bg-amber-600"></span>
             ${item.visaSelectionRate}
           </div>
-          <div class="text-slate-400 line-clamp-2">${item.prCitizenshipTimeline}</div>
+          <div class="text-slate-600 line-clamp-2">${item.prCitizenshipTimeline}</div>
         </td>
         <td class="p-4 font-mono-num">
-          <div class="text-sm font-bold text-cyan-400">$${item.monthlySurplusUsd.toLocaleString()} / mo</div>
-          <div class="text-xs text-emerald-400">≈ ₹${(item.monthlySurplusInr / 100000).toFixed(2)} Lakhs</div>
+          <div class="text-sm font-bold text-blue-700">$${item.monthlySurplusUsd.toLocaleString()} / mo</div>
+          <div class="text-xs text-emerald-700 font-semibold">≈ ₹${(item.monthlySurplusInr / 100000).toFixed(2)} Lakhs</div>
         </td>
       `;
       container.appendChild(tr);
@@ -134,8 +135,12 @@ function initCareerTable() {
   const tabs = document.querySelectorAll('.career-filter-btn');
   tabs.forEach(tab => {
     tab.addEventListener('click', () => {
-      tabs.forEach(t => t.classList.remove('active', 'border-cyan-500', 'text-cyan-400', 'bg-cyan-500/10'));
-      tab.classList.add('active', 'border-cyan-500', 'text-cyan-400', 'bg-cyan-500/10');
+      tabs.forEach(t => {
+        t.classList.remove('active', 'border-blue-600', 'text-blue-700', 'bg-blue-50', 'font-bold');
+        t.classList.add('text-slate-600', 'border-slate-200', 'bg-white');
+      });
+      tab.classList.add('active', 'border-blue-600', 'text-blue-700', 'bg-blue-50', 'font-bold');
+      tab.classList.remove('text-slate-600', 'border-slate-200', 'bg-white');
       renderTable(tab.dataset.filter);
     });
   });
@@ -154,30 +159,30 @@ function initPppBasketTable() {
   basket.forEach(item => {
     const isTradable = item.type.includes('Tradable');
     const badgeColor = isTradable 
-      ? 'bg-rose-500/10 text-rose-400 border-rose-500/30' 
-      : 'bg-emerald-500/10 text-emerald-400 border-emerald-500/30';
+      ? 'bg-rose-50 text-rose-700 border-rose-200 font-medium' 
+      : 'bg-blue-50 text-blue-700 border-blue-200 font-medium';
 
     const tr = document.createElement('tr');
-    tr.className = 'border-b border-slate-800/60 hover:bg-slate-800/40 transition-colors';
+    tr.className = 'border-b border-slate-100 hover:bg-blue-50/30 transition-colors';
     tr.innerHTML = `
       <td class="p-4">
-        <div class="font-medium text-slate-100">${item.item}</div>
+        <div class="font-semibold text-slate-900">${item.item}</div>
         <span class="inline-block text-[11px] px-2 py-0.5 mt-1 rounded border ${badgeColor}">
           ${item.type}
         </span>
       </td>
-      <td class="p-4 font-mono-num text-slate-300">
+      <td class="p-4 font-mono-num text-slate-800">
         $${item.usCostUsd.toLocaleString()} 
         <span class="text-xs text-slate-500">(₹${item.usCostInr.toLocaleString()})</span>
       </td>
-      <td class="p-4 font-mono-num text-slate-300">
+      <td class="p-4 font-mono-num text-slate-800">
         ₹${item.indiaCostInr.toLocaleString()}
         <span class="text-xs text-slate-500">($${item.indiaCostUsd.toFixed(2)})</span>
       </td>
-      <td class="p-4 font-semibold ${isTradable ? 'text-rose-400' : 'text-emerald-400'}">
+      <td class="p-4 font-bold ${isTradable ? 'text-rose-600' : 'text-blue-700'}">
         ${item.ratio}
       </td>
-      <td class="p-4 text-xs text-slate-400 max-w-xs">
+      <td class="p-4 text-xs text-slate-600 max-w-xs leading-relaxed">
         ${item.economicDriver}
       </td>
     `;
@@ -266,18 +271,17 @@ function initDaysToIphoneCalculator() {
     outIncomePct.textContent = `${Math.round(pctOfMonthly)}% of monthly net`;
 
     // US comparison ratio
-    // US Engineer: ~$150k gross -> $9,000 net / 22 = $409/day. $1,100 iPhone = 2.7 days
     const usSwedays = 2.4;
     const ratioToUs = (daysNeeded / usSwedays).toFixed(1);
     if (daysNeeded <= 3) {
       outUsComparison.textContent = `⚡ Global Tech Elite: At par with Silicon Valley Engineers (${daysNeeded.toFixed(1)} days vs ${usSwedays} days in US)!`;
-      outUsComparison.className = "text-xs font-semibold text-emerald-400";
+      outUsComparison.className = "text-xs font-bold text-emerald-700";
     } else if (daysNeeded <= 8) {
       outUsComparison.textContent = `🚀 EU / Remote Benchmark: At par with Senior European Engineers (~6-8 days)`;
-      outUsComparison.className = "text-xs font-semibold text-cyan-400";
+      outUsComparison.className = "text-xs font-bold text-blue-700";
     } else {
       outUsComparison.textContent = `⚠️ Purchasing Power Gap: Requires ${ratioToUs}x more work days than a US SWE (${daysNeeded.toFixed(1)} days vs ${usSwedays} days)`;
-      outUsComparison.className = "text-xs font-semibold text-amber-400";
+      outUsComparison.className = "text-xs font-bold text-amber-700";
     }
 
     // Progress meter (0 to 30 days scale)
@@ -355,7 +359,6 @@ function initHousePlanSimulator() {
 
     const chartLabels = [];
     const chartDataPrincipal = [];
-    const chartDataYield = [];
     const chartDataTotalInr = [];
 
     let currentRate = baseRate;
@@ -396,9 +399,7 @@ function initHousePlanSimulator() {
     outCorpusForeign.textContent = `${currency} ${Math.round(accumulatedForeign).toLocaleString()} accumulated`;
     outFxKicker.textContent = `+₹${(fxKickerInr / 100000).toFixed(1)}L gained purely via FX depreciation`;
 
-    // Real Estate Purchasing Benchmarks
-    // Tier-1 2BHK: ₹1.5 Cr (15,000,000)
-    // Tier-2 Luxury Villa: ₹85 Lakhs (8,500,000)
+    // Real Estate Benchmarks
     const tier1Cost = 15000000;
     const tier2Cost = 8500000;
 
@@ -432,17 +433,17 @@ function initHousePlanSimulator() {
           {
             label: 'Total Accumulated Corpus (INR Lakhs)',
             data: totalData,
-            borderColor: '#22D3EE',
-            backgroundColor: 'rgba(34, 211, 238, 0.15)',
+            borderColor: '#2563EB',
+            backgroundColor: 'rgba(37, 99, 235, 0.08)',
             borderWidth: 2.5,
             fill: true,
             tension: 0.3,
-            pointBackgroundColor: '#22D3EE'
+            pointBackgroundColor: '#2563EB'
           },
           {
             label: 'Base Foreign Principal (At constant FX)',
             data: principalData,
-            borderColor: '#64748B',
+            borderColor: '#94A3B8',
             borderDash: [5, 5],
             borderWidth: 1.5,
             fill: false,
@@ -455,7 +456,7 @@ function initHousePlanSimulator() {
         maintainAspectRatio: false,
         plugins: {
           legend: {
-            labels: { color: '#94A3B8', font: { family: 'Plus Jakarta Sans', size: 12 } }
+            labels: { color: '#334155', font: { family: 'Plus Jakarta Sans', size: 12, weight: '600' } }
           },
           tooltip: {
             callbacks: {
@@ -465,13 +466,13 @@ function initHousePlanSimulator() {
         },
         scales: {
           x: {
-            grid: { color: 'rgba(148, 163, 184, 0.08)' },
-            ticks: { color: '#94A3B8' }
+            grid: { color: '#E2E8F0' },
+            ticks: { color: '#64748B' }
           },
           y: {
-            grid: { color: 'rgba(148, 163, 184, 0.08)' },
+            grid: { color: '#E2E8F0' },
             ticks: {
-              color: '#94A3B8',
+              color: '#64748B',
               callback: (val) => `₹${val}L`
             }
           }
@@ -510,30 +511,17 @@ function initTaxArbitrageCalculator() {
 
     const FX = 86.4;
     const grossInr = usdRevenue * FX;
-
-    // 44ADA eligibility: Gross receipts up to ₹75 Lakhs
-    const isEligible = grossInr <= 7500000;
-    
-    // Deemed profit: 50%
     const deemedProfitInr = grossInr * 0.50;
 
-    // Calculate Tax under New Tax Regime FY 2024-25 / 2025-26
-    // Slabs:
-    // 0 - 3L: Nil
-    // 3L - 7L: 5%
-    // 7L - 10L: 10%
-    // 10L - 12L: 15%
-    // 12L - 15L: 20%
-    // > 15L: 30%
     function computeNewRegimeTax(taxableIncome) {
-      if (taxableIncome <= 700000) return 0; // 87A rebate
+      if (taxableIncome <= 700000) return 0;
       let tax = 0;
       if (taxableIncome > 1500000) {
         tax += (taxableIncome - 1500000) * 0.30;
-        tax += 300000 * 0.20; // 12-15L
-        tax += 200000 * 0.15; // 10-12L
-        tax += 300000 * 0.10; // 7-10L
-        tax += 400000 * 0.05; // 3-7L
+        tax += 300000 * 0.20;
+        tax += 200000 * 0.15;
+        tax += 300000 * 0.10;
+        tax += 400000 * 0.05;
       } else if (taxableIncome > 1200000) {
         tax += (taxableIncome - 1200000) * 0.20;
         tax += 200000 * 0.15;
@@ -547,12 +535,11 @@ function initTaxArbitrageCalculator() {
         tax += (taxableIncome - 700000) * 0.10;
         tax += 400000 * 0.05;
       }
-      // Add 4% Health & Education cess
       return tax * 1.04;
     }
 
     const tax44ada = computeNewRegimeTax(deemedProfitInr);
-    const taxSalaried = computeNewRegimeTax(grossInr - 75000); // Standard deduction 75k
+    const taxSalaried = computeNewRegimeTax(grossInr - 75000);
 
     const effectiveRate44ada = ((tax44ada / grossInr) * 100).toFixed(1);
     const effectiveRateSalaried = ((taxSalaried / grossInr) * 100).toFixed(1);
@@ -591,16 +578,16 @@ function initTimelineChart() {
         {
           label: 'India Tech Engineer (Days of Work)',
           data: indiaDays,
-          backgroundColor: 'rgba(239, 68, 68, 0.75)',
-          borderColor: '#EF4444',
+          backgroundColor: '#DC2626',
+          borderColor: '#B91C1C',
           borderWidth: 1,
           borderRadius: 6
         },
         {
           label: 'US Tech Engineer (Days of Work)',
           data: usDays,
-          backgroundColor: 'rgba(16, 185, 129, 0.85)',
-          borderColor: '#10B981',
+          backgroundColor: '#2563EB',
+          borderColor: '#1D4ED8',
           borderWidth: 1,
           borderRadius: 6
         }
@@ -611,7 +598,7 @@ function initTimelineChart() {
       maintainAspectRatio: false,
       plugins: {
         legend: {
-          labels: { color: '#94A3B8', font: { family: 'Plus Jakarta Sans', size: 12 } }
+          labels: { color: '#334155', font: { family: 'Plus Jakarta Sans', size: 12, weight: '600' } }
         },
         tooltip: {
           callbacks: {
@@ -624,13 +611,13 @@ function initTimelineChart() {
       },
       scales: {
         x: {
-          grid: { color: 'rgba(148, 163, 184, 0.08)' },
-          ticks: { color: '#94A3B8', font: { size: 11 } }
+          grid: { color: '#E2E8F0' },
+          ticks: { color: '#64748B', font: { size: 11 } }
         },
         y: {
-          grid: { color: 'rgba(148, 163, 184, 0.08)' },
+          grid: { color: '#E2E8F0' },
           ticks: {
-            color: '#94A3B8',
+            color: '#64748B',
             callback: (val) => `${val} Days`
           }
         }
@@ -659,13 +646,13 @@ function initFxMacroChart() {
         {
           label: 'USD / INR Exchange Rate (RBI Managed Float)',
           data: rates,
-          borderColor: '#10B981',
-          backgroundColor: 'rgba(16, 185, 129, 0.1)',
+          borderColor: '#1D4ED8',
+          backgroundColor: 'rgba(37, 99, 235, 0.08)',
           borderWidth: 3,
           fill: true,
           tension: 0.25,
           pointRadius: 4,
-          pointBackgroundColor: rates.map((r, idx) => data[idx].year >= 2028 ? '#F59E0B' : '#10B981')
+          pointBackgroundColor: rates.map((r, idx) => data[idx].year >= 2028 ? '#D97706' : '#1D4ED8')
         }
       ]
     },
@@ -674,7 +661,7 @@ function initFxMacroChart() {
       maintainAspectRatio: false,
       plugins: {
         legend: {
-          labels: { color: '#94A3B8', font: { family: 'Plus Jakarta Sans', size: 12 } }
+          labels: { color: '#334155', font: { family: 'Plus Jakarta Sans', size: 12, weight: '600' } }
         },
         tooltip: {
           callbacks: {
@@ -688,13 +675,13 @@ function initFxMacroChart() {
       },
       scales: {
         x: {
-          grid: { color: 'rgba(148, 163, 184, 0.08)' },
-          ticks: { color: '#94A3B8' }
+          grid: { color: '#E2E8F0' },
+          ticks: { color: '#64748B' }
         },
         y: {
-          grid: { color: 'rgba(148, 163, 184, 0.08)' },
+          grid: { color: '#E2E8F0' },
           ticks: {
-            color: '#94A3B8',
+            color: '#64748B',
             callback: (val) => `₹${val}`
           }
         }
@@ -715,17 +702,17 @@ function initFaqAccordion() {
 
   faqs.forEach((item, index) => {
     const card = document.createElement('div');
-    card.className = 'glass-card border border-slate-800/80 rounded-xl overflow-hidden';
+    card.className = 'glass-card border border-slate-200 rounded-xl overflow-hidden bg-white';
 
     card.innerHTML = `
-      <button class="w-full text-left p-5 flex items-center justify-between gap-4 font-semibold text-slate-100 hover:text-cyan-400 transition-colors focus:outline-none" aria-expanded="false" data-faq="${index}">
+      <button class="w-full text-left p-5 flex items-center justify-between gap-4 font-bold text-slate-900 hover:text-blue-700 transition-colors focus:outline-none" aria-expanded="false" data-faq="${index}">
         <span class="flex items-center gap-3">
-          <span class="text-xs px-2 py-1 rounded bg-slate-800 text-cyan-400 font-mono-num">Q${index + 1}</span>
+          <span class="text-xs px-2.5 py-1 rounded bg-blue-50 text-blue-700 font-mono-num font-bold border border-blue-200">Q${index + 1}</span>
           ${item.q}
         </span>
         <i data-lucide="chevron-down" class="w-5 h-5 text-slate-400 transition-transform duration-300"></i>
       </button>
-      <div class="accordion-content px-5 pb-5 text-sm text-slate-300 leading-relaxed border-t border-slate-800/40 hidden">
+      <div class="accordion-content px-5 pb-5 text-sm text-slate-700 leading-relaxed border-t border-slate-100 hidden bg-slate-50/50">
         <p class="pt-4">${item.a}</p>
       </div>
     `;
@@ -769,12 +756,12 @@ function initModals() {
     pppFormula: {
       title: "Mathematical Foundations: Purchasing Power Parity (PPP) & Balassa-Samuelson",
       content: `
-        <div class="space-y-4 text-sm text-slate-300">
-          <div class="p-4 bg-slate-900/80 rounded-lg border border-slate-800 font-mono-num text-cyan-400">
+        <div class="space-y-4 text-sm text-slate-700">
+          <div class="p-4 bg-blue-50/70 rounded-lg border border-blue-200 font-mono-num text-blue-900 font-semibold">
             P_PPP = P_domestic / P_foreign<br>
             S_PPP = (P_non_tradable^α * P_tradable^(1-α))_IN / (P_non_tradable^α * P_tradable^(1-α))_US
           </div>
-          <p><strong class="text-slate-100">Why Tradables Don't Obey Local PPP:</strong></p>
+          <p><strong class="text-slate-900">Why Tradables Don't Obey Local PPP:</strong></p>
           <p>The Law of One Price (LOOP) holds strictly for tradable goods with low transportation costs: <code>P_tradable(Domestic) = E × P_tradable(Foreign) + Tariffs + Taxes</code>.</p>
           <p>Because Apple cannot prevent gray-market export, selling an iPhone for ₹25,000 in India while it sells for $1,000 in the US would result in instantaneous global supply arbitrage. Therefore, global tradable prices stay pinned to international dollar prices, while domestic services (haircuts, rent, domestic help) stay pinned to local labor productivity.</p>
         </div>
@@ -783,12 +770,12 @@ function initModals() {
     taxFormula: {
       title: "Section 44ADA Presumptive Taxation Framework",
       content: `
-        <div class="space-y-4 text-sm text-slate-300">
-          <div class="p-4 bg-slate-900/80 rounded-lg border border-slate-800 font-mono-num text-emerald-400">
+        <div class="space-y-4 text-sm text-slate-700">
+          <div class="p-4 bg-emerald-50/70 rounded-lg border border-emerald-200 font-mono-num text-emerald-900 font-semibold">
             Deemed Taxable Profit = 50% of Gross Professional Receipts<br>
             Threshold: Gross Receipts ≤ ₹75,00,000 (if 95%+ digital/banking)
           </div>
-          <p><strong class="text-slate-100">Key Statutory Conditions:</strong></p>
+          <p><strong class="text-slate-900">Key Statutory Conditions:</strong></p>
           <ul class="list-disc pl-5 space-y-1">
             <li>Applicable to specified professionals: Software Engineers, IT Consultants, Technical Architects, Accountants, Designers (Section 44AA(1)).</li>
             <li>No requirement to maintain formal books of accounts (Section 44AA) or get books audited (Section 44AB).</li>
@@ -800,15 +787,15 @@ function initModals() {
     benamiRules: {
       title: "The Benami Transactions (Prohibition) Amendment Act, 2016",
       content: `
-        <div class="space-y-4 text-sm text-slate-300">
-          <div class="p-4 bg-rose-950/40 rounded-lg border border-rose-900/60 font-mono-num text-rose-300">
+        <div class="space-y-4 text-sm text-slate-700">
+          <div class="p-4 bg-rose-50/80 rounded-lg border border-rose-200 font-mono-num text-rose-900 font-semibold">
             Section 2(8): Any transaction where property is transferred to one person for a consideration provided by another person, held for the immediate or future benefit of the provider.
           </div>
-          <p><strong class="text-slate-100">Mandatory Consequences of Conviction:</strong></p>
+          <p><strong class="text-slate-900">Mandatory Consequences of Conviction:</strong></p>
           <ul class="list-disc pl-5 space-y-2">
-            <li><span class="text-rose-400 font-semibold">Asset Confiscation:</span> Confiscation of the property by the Adjudicating Authority; no compensation is payable.</li>
-            <li><span class="text-rose-400 font-semibold">Rigorous Imprisonment:</span> Minimum 1 year, extendable up to 7 years.</li>
-            <li><span class="text-rose-400 font-semibold">Civil Immunity Bar:</span> Section 4 strictly prohibits the NRI from filing any civil suit or claim to recover the property.</li>
+            <li><span class="text-rose-700 font-bold">Asset Confiscation:</span> Confiscation of the property by the Adjudicating Authority; no compensation is payable.</li>
+            <li><span class="text-rose-700 font-bold">Rigorous Imprisonment:</span> Minimum 1 year, extendable up to 7 years.</li>
+            <li><span class="text-rose-700 font-bold">Civil Immunity Bar:</span> Section 4 strictly prohibits the NRI from filing any civil suit or claim to recover the property.</li>
           </ul>
         </div>
       `
